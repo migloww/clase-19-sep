@@ -47,7 +47,7 @@ if st.button('OFF'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
     message =json.dumps({"Act1":act1})
-    ret= client1.publish("NO_CAP", message)
+    ret= client1.publish("marki", message)
   
     
 else:
@@ -61,7 +61,7 @@ if st.button('Enviar valor analógico'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)   
     message =json.dumps({"Analog": float(values)})
-    ret= client1.publish("AND_AINT_TRIPPIN", message)
+    ret= client1.publish("juanma", message)
     
  
 else:
